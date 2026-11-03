@@ -128,4 +128,15 @@ details p{font-size:14px;line-height:1.7;color:var(--muted);margin-bottom:24px;p
 @media(max-width:420px){.examples{grid-template-columns:1fr;gap:18px}.sample{padding:22px 24px 0}.sample-number{font-size:88px;padding:10px 0 16px}.sample h3{font-size:21px}.sample p{font-size:14px}.sample-link{font-size:12px}.hero-actions{gap:16px}.button{padding:16px 18px;gap:20px;font-size:13px}.hero-price{font-size:18px}.hero-price span{font-size:11px}nav{gap:16px}th,td{padding-inline:8px}tbody td:last-child{font-size:22px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
 
-.more-examples{margin-top:24px}
+
+.workshop-image {
+  max-width: 400px;
+}
+
+.example-frame {
+  display: block;
+  width: 100%;
+  max-width: 320px;
+  height: auto;
+  margin-bottom: 14px;
+}
