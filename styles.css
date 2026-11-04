@@ -140,3 +140,39 @@ details p{font-size:14px;line-height:1.7;color:var(--muted);margin-bottom:24px;p
   height: auto;
   margin-bottom: 14px;
 }
+
+.experience {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+  align-items: center;
+  gap: 32px;
+  padding-block: 40px;
+  border-bottom: 1px solid var(--line);
+}
+
+.experience-count strong {
+  display: block;
+  color: var(--red);
+  font: 400 clamp(56px, 8vw, 96px)/1 Georgia, serif;
+}
+
+.experience-count span {
+  display: block;
+  margin-top: 8px;
+}
+
+.experience h2 {
+  font-size: clamp(25px, 3vw, 36px);
+  margin-bottom: 12px;
+}
+
+.experience p {
+  max-width: 58ch;
+}
+
+@media (max-width: 600px) {
+  .experience {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
