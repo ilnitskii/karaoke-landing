@@ -176,3 +176,35 @@ details p{font-size:14px;line-height:1.7;color:var(--muted);margin-bottom:24px;p
     gap: 20px;
   }
 }
+
+.reviews {
+  grid-column: 1 / -1;
+  padding-top: 24px;
+  border-top: 1px solid var(--line);
+}
+
+.review-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.review-grid figure {
+  margin: 0;
+}
+
+.review-grid blockquote {
+  margin: 0 0 10px;
+}
+
+.review-grid figcaption {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+@media (max-width: 760px) {
+  .review-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
