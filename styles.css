@@ -208,3 +208,15 @@ details p{font-size:14px;line-height:1.7;color:var(--muted);margin-bottom:24px;p
     gap: 20px;
   }
 }
+
+/* Every order link offers both messengers. */
+.messenger-links{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.messenger-links>a{white-space:nowrap}
+.hero-actions .messenger-links{width:100%}
+.hero-actions .messenger-links .button{gap:12px;padding-inline:16px}
+.contact-action{min-width:0}
+.contact-action .messenger-links .button{gap:12px;padding-inline:18px}
+nav .messenger-links{gap:18px}
+nav .nav-contact span{margin-left:5px}
+@media(max-width:1050px){.header{flex-wrap:wrap;padding-block:20px}nav{flex-wrap:wrap;gap:20px}.contact-inner{flex-wrap:wrap}}
+@media(max-width:760px){.header nav{width:100%;justify-content:space-between}.header nav .messenger-links{width:100%;gap:18px}.header .nav-contact{display:inline-flex;align-items:center;gap:6px}.contact-action{max-width:none}.messenger-links{gap:10px}.messenger-links .button{gap:8px;padding:14px 10px;font-size:12px}.hero-actions .messenger-links .button,.contact-action .messenger-links .button{padding-inline:10px;gap:8px}}
